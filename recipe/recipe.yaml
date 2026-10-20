@@ -31,7 +31,9 @@ tests:
       imports:
         - alembic_postgresql_enum
       pip_check: true
-      python_version: ${{ python_min }}.*
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
 
 about:
   homepage: https://github.com/Pogchamp-company/alembic-postgresql-enum
